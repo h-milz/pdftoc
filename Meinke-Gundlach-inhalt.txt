@@ -1,0 +1,31 @@
+A Einleitung
+  1 Hinweise zur Benutzung des Taschenbuchs
+  2 Physikalische Größen, ihre Einheiten und Formelzeichen
+  3 Schreibweise physikalischer Gleichungen
+  4 Frequenzzuordnungen
+B Elektromagnetische Felder und Wellen
+  1 Grundlagen
+    1.1 Koordinatensysteme
+    1.2 Differentialoperatoren
+    1.3 Maxwellsche Gleichungen
+  2 Wellenausbreitung in homogenen Medien
+    2.1 Ebene Welle im verlustlosen Medium
+    2.2 Ebene Welle im verlustbehafteten Medium
+    2.3 Leitendes Gas
+    2.4 Anisotropes Medium
+    2.5 Gyrotropes Medium
+  3 Polarisation
+    3.1 Lineare Polarisation
+    3.2 Zirkulare Polarisation
+  4 Wellen an Grenzflächen
+    4.1 Senkrechter Einfall
+    4.2 Schräger Einfall
+    4.3 Oberflächenwellen
+  5 Skineffekt
+  6 Oberflächenstromdichte
+C Grundlagen für elektrische Netzwerke, Leitungstheorie
+  1 Netzwerkelement und komplexe Frequenz
+    1.1 Klassifizierung elektrischer Netzwerke
+    1.2 Spannung, Strom, komplexe Frequenz, Leistung
+    1.3 Netzwerkelemente
+    1.4 Normierung

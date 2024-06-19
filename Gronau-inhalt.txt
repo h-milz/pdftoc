@@ -1,0 +1,38 @@
+1 Einleitung
+ 1.1 Die Beschreibung einer Kommunikationsverbindung
+ 1.2 Der Empfänger als Beispiel einer HF-Schaltung
+2 Grundlagen zur Feldberechnung
+ 2.1 Die Maxwellschen Gleichungen
+ 2.2 Leistung, Energie und Poyntingvektor
+ 2.3 Lösung der Maxwellschen Gleichungen
+  2.3.1 Allgemeine Lösung
+ 2.4 Harmonische Zeitabhängigkeit der Felder
+ 2.5 Stetigkeitsbedingungen für Feldgrößen
+ 2.6 Einführung fiktiver magnetischer Quellen
+ 2.7 Das Huygenssche Prinzip
+ 2.8 Bildtheorie
+ 2.9 Reziprozitätsgesetz
+3 Wellenleiter
+ 3.1 Feldverteilung in Wellenleitern
+  3.1.1 Lösung der homogenen Wellengleichung
+   3.1.1.1 Lösung in kartesischen Koordinaten
+   3.1.1.2 Lösung in Zylinderkoordinaten
+  3.1.2 Klassifizierung der Feldtypen
+   3.1.2.1 Die TEM-Welle
+    3.1.2.1.1 Die Wellenzahl der TEM-Welle
+ 3.2 Wellenausbreitung auf TEM-Leitungen
+  3.2.1 Die ideale Koaxialleitung
+  3.2.2 Ströme und Spannungen auf der TEM-Leitungen
+  3.2.3 Das Ersatzschaltbild der TEM-Leitung
+ 3.3 Die schwach verlustbehaftete Leitung
+  3.3.1 Die Berechnung der Leiterverluste, der ebene Skineffekt
+  3.3.2 Leitungsersatzschaltbild für schwache Verluste
+ 3.4 Leitungstheorie
+  3.4.1 Betrachtung der Leitungskenngrößen
+ 3.5 Die Leitung als Schaltungselement
+  3.5.1 Der λ/4-Transformator
+  3.5.2 Das kurze Leitungselement
+  3.5.3 Die leerlaufende oder kurzgeschlossene Leitung
+   3.5.3.1 Die leerlaufende Leitung
+    3.5.3.1.1 Die kurze leerlaufende Leitung
+    3.5.3.1.2 Die leerlaufende Leitung der Länge l = i λ/4
