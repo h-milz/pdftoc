@@ -30,9 +30,9 @@ Die Erstellung des Inhalts geht am einfachsten mit copy & paste aus dem PDF in e
 
 Das Skript wurde in "Pure Python" unter Linux erstellt und sollte damit auch auf anderen Betriebssystemen lauffähig sein, wenn die Abhängigkeiten erfüllt sind (Python 3, `regex`, `getopt`, `sys` sowie `pymupdf` bzw. `fitz`). Das müsste mal jemand testen. Eine grafische Oberfläche gibt es aktuell nicht, aber das sollte mit `tkinter`, `PyQt` oder `wxWidgets` nicht schwierig sein.  Mehr als die obigen 3.14159 Parameter muss man ja nicht abfragen. Hilfe ist willkommen! 
 
-TODO: Auch Bücher, die keinen Sandwich-Text enthalten, sondern nur die gescannten Bilder, lassen sich damit aufwerten, indem man das Inhaltsverzeichnis mit Seitenzahlen erstellt. In dem Fall der Buchtext nicht durchsucht, sondern das TOC einfach "as-is" eingebaut. 
+TODO: Auch Bücher, die keinen Sandwich-Text enthalten, sondern nur die gescannten Bilder, lassen sich damit aufwerten, indem man das Inhaltsverzeichnis mit Seitenzahlen manuell erstellt. In dem Fall der Buchtext nicht durchsucht, sondern das TOC einfach "as-is" eingebaut. 
 
-Aus urheberrechtlichen Gründen kann ich keine fertigen aufgewerteten eBooks verteilen, daher müssen Anwender:innen die Konvertierung selbst durchführen. Was wir aber machen können: jede:r, die einen Inhalt erstellt, kann ihn hier mit genauen Angaben zu Buchtitel, Auflage und Erscheinungsjahr hier rein stellen. So entsteht vielleicht im Laufe der Zeit eine kleine Sammlung und alle haben was davon. 
+Aus urheberrechtlichen Gründen kann ich keine fertigen aufgewerteten eBooks verteilen, daher müssen Anwender:innen die Konvertierung selbst durchführen. Was wir aber machen können: jede:r, die einen Inhalt erstellt, kann ihn mit genauen Angaben zu Buchtitel, Auflage und Erscheinungsjahr hier rein stellen. So entsteht vielleicht im Laufe der Zeit eine kleine Sammlung und alle haben was davon. 
 
 ## Copyright-Informationen
 
