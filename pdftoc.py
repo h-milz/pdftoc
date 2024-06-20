@@ -1,40 +1,35 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jun 15 13:59:43 2024
+This program is Copyright (C) Harald Milz <harald.milz@tum.de>, and licensed under the 
+GNU General Public License V3 (https://www.gnu.org/licenses/gpl-3.0). You should have received 
+a copy if the license together with this program, if not, check the web page. 
 
-@author: hm
+As for warranty and liability information, see sections 15 and 16 of the license. 
 """
 
 """
 First step: 
 - extract content file from the PDF text, one line per entry, e.g. with 
-  pdftotext -f 8 -l 20 Meinke-Gundlach\ Taschenbuch\ der\ Hochfrequenztechnik.pdf  inhalt.txt
+  pdftotext -f 8 -p Meinke-Gundlach\ Taschenbuch\ der\ Hochfrequenztechnik.pdf  -c inhalt.txt
 - review and adjust if necessary. The final content file should look e.g. like this:     
     
 A Einleitung
-  1 Hinweise zur Benutzung des Taschenbuchs
-  2 Physikalische Größen, ihre Einheiten und Formelzeichen
-  3 Schreibweise physikalischer Gleichungen
-  4 Frequenzzuordnungen
+ 1 Hinweise zur Benutzung des Taschenbuchs
+ 2 Physikalische Größen, ihre Einheiten und Formelzeichen
+ 3 Schreibweise physikalischer Gleichungen
+ 4 Frequenzzuordnungen
 B Elektromagnetische Felder und Wellen
-  1 Grundlagen
-    1.1 Koordinatensysteme
-    1.2 Differentialoperatoren
-    1.3 Maxwellsche Gleichungen    
-    
-    
-Am Ende sind 2 Parameter wichtig: 
-- wie viele Schreibfehler lässt man in part0 und part1 zu
-- welchen Abstand lässt man zwischen den beiden Parts zu.  
-- stimmt grundsätzlich, aber es kommen zB bei Gronau auch Zwischenräume in den kapitelnummern vor. 
+ 1 Grundlagen
+  1.1 Koordinatensysteme
+  1.2 Differentialoperatoren
+  1.3 Maxwellsche Gleichungen    
     
 """    
 
 import regex as re
 import getopt, sys
 import fitz              # a.k.a. pymupdf
-
 
 def usage():
     print (f'usage {sys.argv[0]} -p "pdf file" -c "content file" [-f first] [-v]')
@@ -47,10 +42,14 @@ except getopt.GetoptError as err:
     usage()
     sys.exit(1)
 
+# Vorsicht Baustelle! Eltern haften für ihre Kinder! 
+# das fliegt noch raus. 
 pdffile = "/home/hm/aTUM/Hochfrequenztechnik/Meinke-Gundlach Taschenbuch der Hochfrequenztechnik.pdf"
 pdffile = "/home/hm/aTUM/Hochfrequenztechnik/Gronau-Höchstfrequenztechnik-new.pdf"
 content = "/home/hm/aTUM/Hochfrequenztechnik/Meinke-Gundlach-inhalt.txt"
 content = "/home/hm/aTUM/Hochfrequenztechnik/Gronau-inhalt.txt"
+
+# Konfiguration
 fuzzy0 = "e<=1"  # for the chapter number - this may be too much for very short chapter number, but ... 
 fuzzy1 = "e<=2"  # for the first 15 characters of the heading
 first = 16
@@ -104,6 +103,7 @@ cur_page = first
 for termnum in range(len(search_terms)):
     term = search_terms[termnum]
     sterm = term.lstrip()           # we'll need this multiple times
+    # TODO: extract the page number if we have a full TOC. 
     if (verbose > 0):
         print ("looking for term {}, '{}'".format(termnum, sterm))
     # split term in 2 parts at the first space: chapter number, heading
